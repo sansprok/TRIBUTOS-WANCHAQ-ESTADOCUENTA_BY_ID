@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SIRecupera" Class="SIRecuperaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=USUARIO-4HQE76I\SSQLMDWPMSER06;Initial Catalog=SIRecupera;Persist Security Info=True;User ID=sa" SettingsObjectName="EstadoCuentaByID.Properties.Settings" SettingsPropertyName="SIRecuperaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Deuda" Member="Deuda">
+    <Type Name="Deuda">
+      <Column Name="IdDeuda" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdFacturaciónMensual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCiudadano" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IdConcepto" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IdPropiedad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaFacturación" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="FechaVencimiento" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="AplicaIPM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AplicaTIM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Deuda" Member="Deuda1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Pagado" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Coactiva" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreación" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="FechaModificación" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Codicontri" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="BaseImponible" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Detalle" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="IdPredio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPredioUr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PagoFacturado" Member="PagoFacturado">
+    <Type Name="PagoFacturado">
+      <Column Name="IdPago" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCiudadano" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IdDeuda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdConcepto" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidosyNombres" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DomicilioFiscalyNumero" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ComprobanteDePago" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="FechaDeVencimiento" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BaseInponible" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MontoPagado" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Descuento" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="NúmeroBarra" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaCreación" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaModificación" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Facturado" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Pagado" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

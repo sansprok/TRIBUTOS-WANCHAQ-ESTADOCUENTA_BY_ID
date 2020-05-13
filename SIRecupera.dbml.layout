@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SIRecupera">
+  <DataContextMoniker Name="/SIRecuperaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8a144ee5-0887-44ad-8ce4-37e3b3d55950" absoluteBounds="4.125, 2.375, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/SIRecuperaDataContext/Deuda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d98f76c-4083-4aeb-aafc-b08d333a6d4a" absoluteBounds="4.14, 2.835, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e36c5491-8486-4c44-886c-ba446e1af39a" absoluteBounds="1.5, 2.375, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/SIRecuperaDataContext/PagoFacturado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcb2dec2-d218-4b7a-945c-618990961ee6" absoluteBounds="1.5150000000000001, 2.835, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

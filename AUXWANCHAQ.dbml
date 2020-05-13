@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AUXWANCHAQ" Class="AUXWANCHAQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=USUARIO-4HQE76I\SSQLMDWPMSER06;Initial Catalog=AUXWANCHAQ;Persist Security Info=True;User ID=sa" SettingsObjectName="EstadoCuentaByID.Properties.Settings" SettingsPropertyName="AUXWANCHAQConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.PA_ESTADOCUENTA_GENERACION_MASIVA_ACTUALIZAR__BYID" Method="PA_ESTADOCUENTA_GENERACION_MASIVA_ACTUALIZAR__BYID">
+    <Parameter Name="FAIDCIUDADANO" Parameter="fAIDCIUDADANO" Type="System.String" DbType="VarChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
